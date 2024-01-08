@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link href="https://fonts.googleapis.com/css?family=Assistant:400,700" rel="stylesheet"><link rel="stylesheet" href="css/stylelogin.css">
+
+</head>
+<body>
+  <script language="javascript"> 
+    function verif()
+    {
+    e=f.T1.value;
+    n=f.T2.value;
+  
+    if((e.indexOf('@')==-1)||(e.indexOf('.')==-1))
+    { alert("veuillez entre lemail correctement");return false}
+
+
+    if(n=="")
+    { alert("veuillez enter Motdepasse");return false}
+    }
+    
+    </script>
+
+<section class='login' id='login'>
+  <div class="backhome" style="text-align: center;">
+   <a href="index.html" class="backhome">Back</a>  
+  </div>
+  <div class='head'>
+  <h1 class='company'>------Admin------</h1>
+  </div>
+  <p class='msg'>Welcome back</p>
+  <div class='form'>
+    <form id="f" method="POST" action="action.php" onSubmit="action.php" webbot-onSubmit>
+  <input type="text"  placeholder='E_mail' class='text' id="T1" required><br>
+  <input type="password" id="T2" placeholder='••••••••••••••' class='password'><br>
+  <a href="#" class='btn-login' id='do-login'>Login</a>
+    </form>
+  </div>
+</section>
+
+  <script  src=""></script>
+
+</body>
+</html>
